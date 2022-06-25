@@ -1,0 +1,17 @@
+@import "include-media.scss";
+
+$color-grey: #eaeaea;
+$color-white: #fffbfa;
+$color-black: #2a2a2a;
+
+$background-gradient-light: linear-gradient(
+  31deg,
+  rgba(251, 225, 212, 1) 0%,
+  rgba(250, 246, 239, 1) 37%,
+  rgba(250, 246, 239, 1) 57%,
+  rgba(252, 228, 223, 1) 100%
+);
+
+$header-height: 96px;
+
+$transition: all 0.2s ease-in;

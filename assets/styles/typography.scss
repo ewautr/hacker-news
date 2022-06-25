@@ -1,0 +1,26 @@
+.font-display,
+h1 {
+  font-weight: 600;
+  font-size: rem(60px);
+}
+
+.font-heading,
+h2 {
+  font-size: rem(20px);
+  font-weight: 600;
+}
+
+.font-paragraph,
+p {
+  font-size: rem(16px);
+  font-weight: 400;
+}
+
+.font-label {
+  font-size: rem(12px);
+  opacity: 0.7;
+}
+
+.font-menu {
+  font-size: rem(30px);
+}
