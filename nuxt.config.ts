@@ -23,14 +23,12 @@ export default defineNuxtConfig({
 
     vite: {
       plugins: [
-        svgLoader({
-          /* ... */
-        })
+        svgLoader()
       ],
       css: {
         preprocessorOptions: {
           scss: {
-            additionalData: '@import "@/assets/styles/variables.scss"; @import "@/assets/styles/mixins.scss";',
+            additionalData: '@import "@/assets/styles/variables.scss"; @import "@/assets/styles/mixins.scss"; @import "@/assets/styles/animations.scss";',
           },
         },
       },

@@ -68,16 +68,4 @@ defineProps({
     }
   }
 }
-
-@keyframes pulseBg {
-  0% {
-    background-color: #eee;
-  }
-  50% {
-    background-color: #eaeaea;
-  }
-  100% {
-    background-color: #eee;
-  }
-}
 </style>
