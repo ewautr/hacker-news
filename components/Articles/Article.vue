@@ -14,6 +14,7 @@
         </div>
         <AppLink :to="`/${article.id}`">Read more...</AppLink>
       </div>
+      <ArticleAuthor :name="article.by" :karma="article.karma" />
     </div>
   </article>
 </template>
@@ -23,6 +24,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Calendar from "~/assets/icons/calendar.svg";
 import Star from "~/assets/icons/star.svg";
+import ArticleAuthor from "./ArticleAuthor.vue";
 
 defineProps({
   article: Object,
