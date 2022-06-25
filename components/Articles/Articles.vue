@@ -9,12 +9,21 @@
         :class="{ featured: index === 0 }"
       />
     </div>
+    <div v-else class="articles articles-skeleton">
+      <ArticleSkeleton
+        v-for="(item, index) in 10"
+        :key="index"
+        :class="{ featured: index === 0 }"
+        :index="index"
+      />
+    </div>
   </main>
 </template>
 
 <script setup>
 import axios from "axios";
 import Article from "./Article.vue";
+import ArticleSkeleton from "../ArticlesSkeleton/ArticleSkeleton.vue";
 
 const baseUrl = "https://hacker-news.firebaseio.com/v0";
 const articles = ref(null);
